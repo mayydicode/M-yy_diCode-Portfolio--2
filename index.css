@@ -93,7 +93,7 @@ nav button:hover {
   gap: 30px;
 }
 .info {
-  width: 600px;
+  width: 6http://127.0.0.1:5500/index.html00px;
 
   display: flex;
   flex-direction: column;
@@ -129,6 +129,6 @@ p {
   margin-top: 10px;
 }
 
-.ava {
+.ava img{
   border-radius: 10px;
 }
