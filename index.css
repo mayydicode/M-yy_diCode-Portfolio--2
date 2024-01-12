@@ -10,26 +10,26 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body {
+/* body {
   height: 100vh;
   width: 100vw;
-}
+} */
 
 /* Css-nav */
 
-nav .logo img {
+nav .logo img,
+.footer-logo img {
   height: 50px;
   width: 50px;
 }
 
 a {
   text-decoration: none;
-  color: #355c7d;
+  color: #1c1e53;
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #1c1e53;
+nav ul a:hover {
   border-bottom: 1px solid #1c1e53;
 }
 
@@ -72,11 +72,10 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-
   gap: 10px;
 }
 
-.logo a {
+nav .logo a {
   font-weight: bold;
   font-size: 20px;
 }
@@ -149,16 +148,20 @@ p {
 
 .ava img {
   border-radius: 10px;
+  width: 500px;
 }
 
 /* Css-skill */
 
 .skills {
   padding: 110px 85px 0;
-  margin-bottom: 900px;
+  margin-bottom: 50px;
 }
 
-.skills h3 {
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.feedback h3 {
   font-size: 40px;
   margin-top: 20px;
 }
@@ -173,7 +176,7 @@ p {
   background-color: #c6ffdd;
   border-radius: 10px;
   width: 25%;
-  padding: 32px;
+  padding: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-bottom: 4px solid transparent;
@@ -204,4 +207,97 @@ p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 22px;
+}
+
+/* Css-About */
+
+.about {
+  background-color: #fff;
+  padding: 85px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about .about-ava img {
+  width: 550px;
+  border-radius: 10px;
+}
+
+.about-info {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* Css-footer */
+
+footer {
+  background-color: #c6ffdd;
+  display: flex;
+  padding: 85px;
+  /* gap: 40px; */
+  flex-direction: column;
+}
+
+.footer-top {
+  align-items: center;
+}
+
+footer .footer-top,
+.social-icon ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-top .footer-logo {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-top .footer-logo a,
+.contact ul a,
+.social-icon a {
+  color: #23074d;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.social-icon :hover {
+  scale: 1.15;
+}
+
+.contact a:hover {
+  border-bottom: 1px solid #23074d;
+}
+
+footer .footer-button {
+  display: flex;
+  padding: 30px;
+  font-size: 18px;
+}
+
+footer .footer-button p span {
+  align-items: center;
+}
+
+.footer-button p span :hover {
+  color: red;
 }

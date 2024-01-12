@@ -1,94 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mâyy_diCode-Portfolio-#2</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="icon"
-      href="https://cdn.pixabay.com/photo/2016/09/24/20/11/dab-1692452_1280.png"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mâyy_diCode-Portfolio-#2</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="https://cdn.pixabay.com/photo/2016/09/24/20/11/dab-1692452_1280.png" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./picture/logo.gif" alt="" />
+      <a href="https://github.com/mayydicode" target="_blank">Mâyy_diCode</a>
+    </div>
+    <ul>
+      <li><a href="#main">Home</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#footer">Portfolio</a></li>
+    </ul>
+    <button>Contact Me</button>
+    <button id="menuButton" onclick="openMenu()">
+      <i class="bx bx-menu"></i>
+    </button>
+  </nav>
+
+  <div class="main" id="main">
+    <div class="info">
+      <h5>Hi, I'm <span> Mâyy_diCode</span></h5>
+      <h3>I'm work freelance.</h3>
+      <p>Nice to meet you too. I would love to work together someday soon!</p>
+      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fduchung1107%3Ffbclid%3DIwAR3UmXB28ceisZjCGfraHe-Lniz6HtootPH_AsgU6GwVHXmP1lNvYF_oApo&h=AT2O2CuHr-JmrS_b5qgr4QzBk7WU6Etg2TykEZlUBmDhplE_P_HMTk8eFO_I6dizhLOsA8BwByBQFD6Wf0YeluzXqYhoWoWvW9oq_CiFw-0GQYV9CFtHYzKQgQFabwIMIa6J"
+        target="_blank" class="folow">Folow Me</a>
+    </div>
+    <div class="ava">
+      <img src="./picture/ava.png" alt="Mâyy_diCode" />
+    </div>
+  </div>
+
+  <div class="skills" id="skills">
+    <h5>My Skills</h5>
+    <h3>My Expertise</h3>
+    <div class="skill-items">
+      <div class="item">
+        <div class="icon"><i class='bx bx-directions'></i></div>
+        <h4>Strategy & Direction</h4>
+        <p>
+          Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
+          việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
+        </p>
+      </div>
+      <div class="item">
+        <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+        <h4>Branding & Logo</h4>
+        <p>
+          Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
+          việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
+        </p>
+      </div>
+      <div class="item">
+        <div class="icon"><i class='bx bxl-figma'></i></i></div>
+        <h4>UI & UX Design</h4>
+        <p>
+          Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
+          việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
+        </p>
+      </div>
+      <div class="item">
+        <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+        <h4>Webflow Coding</h4>
+        <p>
+          Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
+          việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-ava"><img src="./picture/about-ava-2.png" alt=""></div>
+    <div class="about-info">
+      <h5>About</h5>
+      <h3>About Me</h3>
+      <p>Hi, I'm Mâyy_diCode. I'm work freelance. Nice to meet you too. I would love to work together someday soon.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
         <img src="./picture/logo.gif" alt="" />
         <a href="https://github.com/mayydicode" target="_blank">Mâyy_diCode</a>
       </div>
-      <ul>
-        <li><a href="#Main">Home</a></li>
-        <li><a href="#Skill">Skill</a></li>
-        <li><a href="#Aboutme">About Me</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="Feedback">Feed back</a></li>
-      </ul>
-      <button>Contact Me</button>
-      <button id="menuButton" onclick="openMenu()">
-        <i class="bx bx-menu"></i>
-      </button>
-    </nav>
-
-    <div class="main" id="main">
-      <div class="info">
-        <h5>Hi, I'm <span> Mâyy_diCode</span></h5>
-        <h3>I'm work freelance.</h3>
-        <p>Nice to meet you too. I would love to work together someday soon!</p>
-        <a
-          href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fduchung1107%3Ffbclid%3DIwAR3UmXB28ceisZjCGfraHe-Lniz6HtootPH_AsgU6GwVHXmP1lNvYF_oApo&h=AT2O2CuHr-JmrS_b5qgr4QzBk7WU6Etg2TykEZlUBmDhplE_P_HMTk8eFO_I6dizhLOsA8BwByBQFD6Wf0YeluzXqYhoWoWvW9oq_CiFw-0GQYV9CFtHYzKQgQFabwIMIa6J"
-          target="_blank"
-          class="folow"
-          >Folow Me</a
-        >
-      </div>
-      <div class="ava">
-        <img src="./picture/ava.png" alt="Mâyy_diCode" />
-      </div>
-    </div>
-    
-    <div class="skills" id="skills">
-      <h5>My Skills</h5>
-      <h3>My Expertise</h3>
-      <div class="skill-items">
-          <div class="item">
-              <div class="icon"><i class='bx bx-directions'></i></div>
-              <h4>Strategy & Direction</h4>
-              <p>
-                  Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
-việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
-              </p>
-          </div>
-          <div class="item">
-              <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
-              <h4>Branding & Logo</h4>
-              <p>
-                  Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
-việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
-              </p>
-          </div>
-          <div class="item">
-              <div class="icon"><i class='bx bxl-figma'></i></i></div>
-              <h4>UI & UX Design</h4>
-              <p>
-                  Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
-việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
-              </p>
-          </div>
-          <div class="item">
-              <div class="icon"><i class='bx bx-code-alt'></i></i></div>
-              <h4>Webflow Coding</h4>
-              <p>
-                  Tích cực tham gia vào các dự án thực tế thông qua việc thực tập hoặc làm công
-việc nhỏ để tích luỹ kinh nghiệm thực tiễn và xây dựng mạng lưới quan hệ.
-              </p>
-          </div>
+     
+        <div class="contact">
+          <ul>
+            <li><a href="#Main">Home</a></li>
+            <li><a href="#Wedsites">Wedsites</a></li>
+            <li><a href="#Youtube">Youtube</a></li>
+            <li><a href="#Project">Project</a></li>
+          </ul>
+        </div>
+      
+        <div class="social-icon">
+          <a href="https://www.facebook.com/profile.php?id=100006767285307" target="_blank"><i
+              class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/duchung1107/?fbclid=IwAR2xfEw0KWD3d8fuA3BpKbITrBgyZ9FxuI9FOebuNYlan7177YXuIXZt7ac"
+            target="_blank">
+            <i class='bx bxl-instagram'></i></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2Ftranduchung%3Ffbclid%3DIwAR0qz6zShiyZRuJFu1l55Q4er_4a3wFGbjAsyTtf1MPfymUN8dHFSI0vWmA&h=AT06k3OxtSuscrE8h1UntzB5zdZ0ISXs63tRU7MUX6cuGlZWWoZw9CFJJLRp8FIPPR8SftPfqy6c4kug81pqFxwvKKWz1nlG5_e3BMPzte59izfa6Of2JuuJg564W846kPnR3w"
+            target="_blank">
+            <i class='bx bxl-linkedin'></i></a>
+   
       </div>
   </div>
+    
+      <div class="footer-button">
+        <p>Made With
+          <span><i class='bx bxs-heart'></i></span> By Mâyy_diCode
+        </p>
+      </div>
+    
+  </footer>
   <script src="script.js"></script>
-  </body>
-</html>
+</body>
 
+</html>

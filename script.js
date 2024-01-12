@@ -1,4 +1,4 @@
 function openMenu() {
-  const nav = document.querySelector("nav");
+  let nav = document.querySelector("nav");
   nav.classList.toggle("open");
 }
